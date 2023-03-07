@@ -1,21 +1,9 @@
-#Udemy Course 1! 
-stages:
-    - build
-    - test
-
-build:
-    stage: build
-    script:
-        - echo "Building"
-        - mkdir build
-        - touch build/info.txt
-    artifacts:
-        paths:
-            - build/
-
-test:
-    stage: test
-    script:
-        - echo "Testing"
-        - test -f "build/info.txt"
+build the car:
+  script:
+    - mkdir build 
+    - cd build 
+    - touch car.txt
+    - echo "chassis" > car.txt
+    - echo "engine" > car.txt
+    - echo "wheels" > car.txt
 
